@@ -22,6 +22,7 @@
 - SHAP는 게임이론을 다르는 최적의 Shapley Value를 기반으로 한다.
 - SHAP의 목적 : 예측에 대한 각 특성의 기여도를 계산하여 관측치 x의 예측값을 설명한다.
 - c연합을 shapley value 추정에서 얻을 수 있는 가중치에 다라 샘플링된 관측치에 가중치를 부여한다.
+
 <a href="https://ibb.co/6rChhrk"><img src="https://i.ibb.co/34ZXX4n/1.png" alt="1" border="0"></a>
 
 - 장점)
