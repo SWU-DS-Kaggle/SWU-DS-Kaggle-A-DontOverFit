@@ -34,6 +34,41 @@
 자료 출처 : https://datanetworkanalysis.github.io/2019/12/24/shap2
 
 
-(혜은) ...
+(혜은)
+# ELI5
+## 1. ELI5란?
+시각화와 머신러닝 모델들을 API를 활용하여 디버깅 할 수 있도록 하는 파이썬 라이브러리 
+
+## 2. ELI5의 기능 : 
+1) 머신러닝 framework 내부에 설치되어있어, 블랙박스 모델을 설명하는 방법을 제공한다. 
+2) 머신러닝 모델들의 디버깅을 가능하게 한다
+3) 머신러닝 모델들의 예측결과를 설명한다. 
+
+## 3. ELI5가 가능한 머신러닝 모델 및 패키지 : 
+1) scikit-learn
+2) Keras
+3) XGBoost
+4) LightGBM
+5) CatBoost
+6) lightning
+7) sklearn-crfsuite
+
+## 4. 활용방법 
+1) 분류 및 회귀모델
+- eli5.show_weights() : 모델 파라미터 확인하고, 모델 작동 방법을 확인
+- (이미지 첨부)
+- eli5.show_prediction() : 모델의 개별 예측결과를 확인하고, 그 결과가 나오게 된 이유 확인
+(이미지 첨부)
+
+2) titanic 예시 
+(링크 : https://eli5.readthedocs.io/en/latest/tutorials/xgboost-titanic.html)
+- 일반 코드와 ELI5 차이점 
+1) 가중치
+(이미지 첨부)
+3) 예측
+(이미지 첨부)
+
+
+
 
 (하영) \\(^-^)/
