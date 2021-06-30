@@ -39,6 +39,13 @@
 ## 1. ELI5란?
 시각화와 머신러닝 모델들을 API를 활용하여 디버깅 할 수 있도록 하는 파이썬 라이브러리 
 
+*기타) 
+1. ELI5(explain like I’m 5)_ 미국표현 중 하나인듯..?
+- 약자 의미 : (주로 사용되지 않음) 
+  -> 5살 아이가 이해할 수 있을 정도로 복잡한 주제를 간단하게 설명
+- 주로 사용되는 의미 :
+  -> 주제를 이해가 쉬운 형태로 쪼개서 읽는 사람들이 친숙한 언어로 바꿔설명하는 것
+  
 ## 2. ELI5의 기능 : 
 1) 머신러닝 framework 내부에 설치되어있어, 블랙박스 모델을 설명하는 방법을 제공한다. 
 2) 머신러닝 모델들의 디버깅을 가능하게 한다
@@ -56,19 +63,23 @@
 ## 4. 활용방법 
 1) 분류 및 회귀모델
 - eli5.show_weights() : 모델 파라미터 확인하고, 모델 작동 방법을 확인
-- (이미지 첨부)
+<img width="113" alt="1" src="https://user-images.githubusercontent.com/68270643/123999515-94c06980-da0d-11eb-94cd-2e877480c3df.PNG">
 - eli5.show_prediction() : 모델의 개별 예측결과를 확인하고, 그 결과가 나오게 된 이유 확인
-(이미지 첨부)
+<img width="325" alt="2" src="https://user-images.githubusercontent.com/68270643/123999564-9ee26800-da0d-11eb-859d-06936b996dfd.PNG">
 
 2) titanic 예시 
 (링크 : https://eli5.readthedocs.io/en/latest/tutorials/xgboost-titanic.html)
 - 일반 코드와 ELI5 차이점 
 1) 가중치
-(이미지 첨부)
+<img width="504" alt="weight" src="https://user-images.githubusercontent.com/68270643/123999893-f4b71000-da0d-11eb-82ca-ad0a709b0b9c.PNG">
+### ElI5
+<img width="429" alt="weight2" src="https://user-images.githubusercontent.com/68270643/123999965-0e585780-da0e-11eb-9dfe-3785c478f772.PNG">
 3) 예측
-(이미지 첨부)
+### ElI5
+<img width="264" alt="prediction" src="https://user-images.githubusercontent.com/68270643/123999897-f680d380-da0d-11eb-836c-ce40888366f1.PNG">
 
-
+4) Null값
+<img width="264" alt="null" src="https://user-images.githubusercontent.com/68270643/123999901-f7b20080-da0d-11eb-9ac0-931ebeba7da9.PNG">
 
 
 (하영) \\(^-^)/
