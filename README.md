@@ -84,4 +84,23 @@
 <img width="264" alt="null" src="https://user-images.githubusercontent.com/68270643/123999901-f7b20080-da0d-11eb-9ac0-931ebeba7da9.PNG">
 
 
-(하영) \\(^-^)/
+(하영) 
+<h4> 1. K-fold 교차검증을 하는 이유? </h4>
+<h5> &nbsp; 기본적으로는 셔플없이 데이터 세트를 K번 연속 폴드로 나눈다. 그런다음 각 폴드는 검증세트로 한 번 사용되고 나머지는 매번 트레이닝 세트의 역할을 한다. 데이터 수가 적으면 데이터의 일부인 유효성 검사의 수 또한 적기 때문에 유효성 검사의 신뢰성이 좋지 않다. 그러나 유효성 검사 데이터의 수가 증가하면 훈련 데이터의 수가 적어지기 때문에 정상적인 학습 프로세스가 불가능하다.  따라서 이 딜레마를 해결하기 위한 것이 바로 K-fold 교차검증이다. </h5>
+<h4> 2. K-fold 교차검증에서의 학습과 검증 </h4>
+<h5> &nbsp; 전체 데이터를 K부분 집합으로 나눈다. 예를 들어 5세트를 만들면 4세트가 학습 데이터가 되고 5번째 세트는 유효성 검사를 위한 것이 되는 것이다. 이어 검증은 4번째 세트로 하고 나머지는 훈련 데이터로 사용한다. 이런식으로 세번째, 두번째, 첫번째도 해나가면 총 5개의 모델 또는 k 모델이 K번 교차 검증하게 되는 것이다. </h5>
+<a href="https://ibb.co/gM8RCcw"><img src="https://i.ibb.co/PZy68V4/Kfold.jpg" alt="Kfold" border="0"></a>
+<h4> 3. StratifiedKFold </h4>
+<h5> &nbsp; 계층화된 폴드를 반환하는 K-폴드의 변형이다. 각 세트에는 각 세트의 샘플이 전체 세트와 거의 같은 비율로 포함되어 있고 데이터가 편향되면 K-폴드 교차 검증이 제대로 수행되지 않을 수 있다.
+그래서 트레인 세트와 유효성 검사 세트를 여기저기서 수집한다.
+</h5>
+<a href="https://ibb.co/vqFVWxz"><img src="https://i.ibb.co/tKGQ6MC/KFold2.jpg" alt="KFold2" border="0"></a>
+<h4> 4. K-fold와 StratifiedKFold의 차이 </h4>
+<h5> &nbsp; 일반적으로 K-Fold는 회귀에 사용되며 StratifiedKFold는 분류에 사용된다.
+</h5>
+<h4> 5. RepeatedStratifiedKFold </h4>
+<h5> &nbsp; RepeatedStratifiedKFold는 StratifiedKFold와 비슷하지만 그 안에서 여러번 반복되는 것이 다르다.
+RepeatedStratifiedKFold는 각 반복마다 또 랜덤으로 n번 반복한다.
+즉, 교차 검증 내부에 교차 검증이 있다.
+</h5>
+<a href="https://ibb.co/m0Q3Hrf"><img src="https://i.ibb.co/3vtn05g/KFold3.jpg" alt="KFold3" border="0"></a>
