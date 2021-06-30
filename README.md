@@ -73,9 +73,11 @@
 1) 가중치
 <img width="504" alt="weight" src="https://user-images.githubusercontent.com/68270643/123999893-f4b71000-da0d-11eb-82ca-ad0a709b0b9c.PNG">
 ### ElI5
+
 <img width="429" alt="weight2" src="https://user-images.githubusercontent.com/68270643/123999965-0e585780-da0e-11eb-9dfe-3785c478f772.PNG">
 3) 예측
 ### ElI5
+
 <img width="264" alt="prediction" src="https://user-images.githubusercontent.com/68270643/123999897-f680d380-da0d-11eb-836c-ce40888366f1.PNG">
 
 4) Null값
